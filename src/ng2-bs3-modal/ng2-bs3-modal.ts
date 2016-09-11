@@ -1,4 +1,5 @@
 import { NgModule, Type } from '@angular/core';
+import { BrowserModule  } from '@angular/platform-browser';
 
 import { ModalComponent } from './components/modal';
 import { ModalHeaderComponent } from './components/modal-header';
@@ -21,6 +22,7 @@ export const MODAL_DIRECTIVES: Type<any>[] = [
 ];
 
 @NgModule({
+    imports: [BrowserModule],
     declarations: MODAL_DIRECTIVES,
     exports: MODAL_DIRECTIVES
 })
